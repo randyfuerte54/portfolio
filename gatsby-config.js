@@ -6,7 +6,7 @@ module.exports = {
     title: 'Randy Fuerte',
     description:
       'Randy Fuerte is a Senior Flutter Developer and Mobile Software Engineer specializing in building production-grade mobile apps for FinTech, banking, retail, and enterprise clients.',
-    siteUrl: 'https://randy1bc.github.io/portfolio', // No trailing slash allowed!
+    siteUrl: 'https://randyfuerte54.github.io/portfolio', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '',
   },
