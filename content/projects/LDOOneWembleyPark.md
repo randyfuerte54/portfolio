@@ -1,7 +1,7 @@
 ---
-date: '2025-07-03'
+date: '2025-07-12'
 title: 'LDO One Wembley Park'
-ios: 'https://apps.apple.com/us/app/one-wembley-park/id1593211164'
+ios: 'https://apps.apple.com/app/id1593211164'
 android: 'https://play.google.com/store/apps/details?id=com.coniq.ldo'
 icon: './icons/LDOOneWembleyPark.jpg'
 tech:

@@ -1,7 +1,7 @@
 ---
-date: '2025-07-02'
+date: '2025-07-11'
 title: 'Batavia Stad Fashion Outlet'
-ios: 'https://apps.apple.com/us/app/batavia-stad-fashion-club/id1439782852'
+ios: 'https://apps.apple.com/app/id1439782852'
 android: 'https://play.google.com/store/apps/details?id=com.coniq.batavia'
 icon: './icons/BataviaStad.jpg'
 tech:

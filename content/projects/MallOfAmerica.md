@@ -1,7 +1,7 @@
 ---
-date: '2025-07-05'
+date: '2025-07-14'
 title: 'Mall of America'
-ios: 'https://apps.apple.com/us/app/mall-of-america/id1055421962'
+ios: 'https://apps.apple.com/app/id1055421962'
 android: 'https://play.google.com/store/apps/details?id=com.moa.mallofamerica'
 icon: './icons/MallOfAmerica.jpg'
 tech:
