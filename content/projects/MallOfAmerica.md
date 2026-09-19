@@ -3,6 +3,7 @@ date: '2025-07-05'
 title: 'Mall of America'
 ios: 'https://apps.apple.com/us/app/mall-of-america/id1055421962'
 android: ''
+icon: './icons/MallOfAmerica.jpg'
 tech:
   - Flutter
   - Ionic Migration

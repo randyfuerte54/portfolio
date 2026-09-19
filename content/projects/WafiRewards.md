@@ -3,6 +3,7 @@ date: '2025-07-04'
 title: 'WAFI Rewards'
 ios: 'https://apps.apple.com/us/app/wafi-rewards/id6587574365'
 android: ''
+icon: './icons/WafiRewards.jpg'
 tech:
   - Flutter
   - Ionic Migration

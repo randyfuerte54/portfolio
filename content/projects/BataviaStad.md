@@ -3,6 +3,7 @@ date: '2025-07-02'
 title: 'Batavia Stad Fashion Outlet'
 ios: 'https://apps.apple.com/us/app/batavia-stad-fashion-club/id1439782852'
 android: ''
+icon: './icons/BataviaStad.jpg'
 tech:
   - Flutter
   - Ionic Migration
