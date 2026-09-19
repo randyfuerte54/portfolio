@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { withPrefix } from 'gatsby';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
@@ -66,14 +67,15 @@ const Hero = () => {
     <>
       <p>
         I’m a Senior Flutter Developer and Mobile Software Engineer with 6+ years shipping
-        production apps across FinTech, banking, retail, and construction safety — for clients and
-        teams across Australia, the UK, and the Philippines. I care about clean architecture, test
-        coverage, and code that’s still maintainable a year later.
+        production apps across FinTech, banking, retail, and construction safety for clients and
+        teams across Australia, the UK, Singapore, and the Philippines. I care about clean
+        architecture, test coverage, documentation, and code that’s still maintainable a year
+        later.
       </p>
     </>
   );
   const five = (
-    <a className="email-link" href="/resume.pdf" target="_blank" rel="noreferrer">
+    <a className="email-link" href={withPrefix('/resume.pdf')} target="_blank" rel="noreferrer">
       Download Resume
     </a>
   );

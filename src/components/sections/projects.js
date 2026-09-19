@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { srConfig } from '@config';
@@ -86,6 +87,13 @@ const StyledProject = styled.li`
         width: 40px;
         height: 40px;
       }
+    }
+
+    .app-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 11px;
+      overflow: hidden;
     }
 
     .project-links {
@@ -182,6 +190,13 @@ const Projects = () => {
               tech
               github
               external
+              ios
+              android
+              icon {
+                childImageSharp {
+                  gatsbyImageData(width: 48, height: 48, placeholder: NONE, layout: FIXED)
+                }
+              }
             }
             html
           }
@@ -213,19 +228,38 @@ const Projects = () => {
 
   const projectInner = node => {
     const { frontmatter, html } = node;
-    const { github, external, title, tech } = frontmatter;
+    const { github, external, ios, android, icon, title, tech } = frontmatter;
+    const appIcon = getImage(icon);
+    // App Store is the primary link, Google Play is the fallback
+    const mainLink = ios || android || external || github || undefined;
 
     return (
       <div className="project-inner">
         <header>
           <div className="project-top">
-            <div className="folder">
-              <Icon name="Folder" />
-            </div>
+            {appIcon ? (
+              <div className="app-icon">
+                <GatsbyImage image={appIcon} alt={`${title} app icon`} />
+              </div>
+            ) : (
+              <div className="folder">
+                <Icon name="Folder" />
+              </div>
+            )}
             <div className="project-links">
               {github && (
                 <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
                   <Icon name="GitHub" />
+                </a>
+              )}
+              {ios && (
+                <a href={ios} aria-label="App Store Link" target="_blank" rel="noreferrer">
+                  <Icon name="AppStore" />
+                </a>
+              )}
+              {android && (
+                <a href={android} aria-label="Google Play Store Link" target="_blank" rel="noreferrer">
+                  <Icon name="PlayStore" />
                 </a>
               )}
               {external && (
@@ -242,9 +276,13 @@ const Projects = () => {
           </div>
 
           <h3 className="project-title">
-            <a href={external} target="_blank" rel="noreferrer">
-              {title}
-            </a>
+            {mainLink ? (
+              <a href={mainLink} target="_blank" rel="noreferrer">
+                {title}
+              </a>
+            ) : (
+              title
+            )}
           </h3>
 
           <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />

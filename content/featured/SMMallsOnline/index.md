@@ -1,10 +1,9 @@
 ---
-date: '3'
+date: '2'
 title: 'SM Malls Online'
 cover: './demo.png'
-github: ''
-external: ''
-cta: ''
+ios: 'https://apps.apple.com/ph/app/sm-malls-online/id1524596778'
+android: ''
 tech:
   - Flutter
   - Firebase Analytics
@@ -12,4 +11,4 @@ tech:
   - MoEngage
 ---
 
-Development Captain and Manager for the Polaris team, leading engineering direction, sprint delivery, and team performance for a nationwide retail app. Drove MoEngage campaign implementations that generated ₱15M in revenue across targeted Android and iOS campaigns, and introduced BLoC testing, the Repository Pattern, localisation, and SonarQube to raise long-term code quality.
+The mobile app of SM Supermalls, connecting shoppers nationwide to SM malls, stores, and promotions on Android and iOS. As Development Captain and Manager of the Polaris team, I led engineering direction and sprint delivery, ran production releases as Release Manager, and drove MoEngage campaigns that generated ₱15M in revenue.

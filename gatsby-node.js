@@ -7,6 +7,22 @@
 const path = require('path');
 const _ = require('lodash');
 
+// Declare optional frontmatter fields up front so queries never fail when no
+// markdown file happens to set them (e.g. store links or an app icon).
+exports.createSchemaCustomization = ({ actions }) => {
+  actions.createTypes(`
+    type MarkdownRemarkFrontmatter {
+      github: String
+      external: String
+      ios: String
+      android: String
+      cta: String
+      showInProjects: Boolean
+      icon: File @fileByRelativePath
+    }
+  `);
+};
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
   const postTemplate = path.resolve(`src/templates/post.js`);

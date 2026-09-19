@@ -322,6 +322,8 @@ const Featured = () => {
               tech
               github
               external
+              ios
+              android
               cta
             }
             html
@@ -355,8 +357,10 @@ const Featured = () => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, cover, cta } = frontmatter;
+            const { external, title, tech, github, ios, android, cover, cta } = frontmatter;
             const image = getImage(cover);
+            // App Store is the primary link, Google Play is the fallback
+            const mainLink = ios || android || external || github || undefined;
 
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
@@ -365,7 +369,7 @@ const Featured = () => {
                     <p className="project-overline">Featured Project</p>
 
                     <h3 className="project-title">
-                      <a href={external}>{title}</a>
+                      <a href={mainLink}>{title}</a>
                     </h3>
 
                     <div
@@ -392,6 +396,16 @@ const Featured = () => {
                           <Icon name="GitHub" />
                         </a>
                       )}
+                      {ios && (
+                        <a href={ios} aria-label="App Store Link">
+                          <Icon name="AppStore" />
+                        </a>
+                      )}
+                      {android && (
+                        <a href={android} aria-label="Google Play Store Link">
+                          <Icon name="PlayStore" />
+                        </a>
+                      )}
                       {external && !cta && (
                         <a href={external} aria-label="External Link" className="external">
                           <Icon name="External" />
@@ -402,7 +416,7 @@ const Featured = () => {
                 </div>
 
                 <div className="project-image">
-                  <a href={external ? external : github ? github : '#'}>
+                  <a href={mainLink}>
                     <GatsbyImage image={image} alt={title} className="img" />
                   </a>
                 </div>

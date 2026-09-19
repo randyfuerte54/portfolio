@@ -1,10 +1,9 @@
 ---
-date: '2'
+date: '3'
 title: 'UnionDigital Bank'
 cover: './demo.png'
-github: ''
-external: ''
-cta: ''
+ios: 'https://apps.apple.com/us/app/uniondigital-bank-ud/id1631487699'
+android: ''
 tech:
   - Flutter
   - Kotlin
@@ -12,4 +11,4 @@ tech:
   - Blockchain
 ---
 
-Part of the team that delivered the first mobile digital banking app in the Philippines, built and shipped within 7 months. Pioneer developer on UnionDigital-to-UnionDigital, UnionDigital-to-UnionBank, and bank-to-bank transfer features, and POC lead for in-app OTP and blockchain-based identity verification, writing native Kotlin and Swift where platform-specific requirements demanded it.
+A mobile-first digital banking app for sending money between UnionDigital accounts, to UnionBank, and to other banks, secured with in-app OTP and blockchain-based identity verification. It was the first mobile digital banking app in the Philippines, shipped in 7 months. I was a pioneer developer on the transfer features and POC lead for OTP and identity verification, writing native Kotlin and Swift where needed.

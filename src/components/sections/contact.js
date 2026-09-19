@@ -61,7 +61,7 @@ const Contact = () => {
 
       <p>
         I’m currently open to new opportunities and freelance work. Whether you have a question, a
-        project in mind, or just want to say hi, my inbox is always open — I’ll get back to you as
+        project in mind, or just want to say hi, my inbox is always open. I’ll get back to you as
         soon as I can!
       </p>
 
