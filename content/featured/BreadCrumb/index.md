@@ -4,8 +4,10 @@ title: 'BreadCrumb'
 cover: './demo.jpg'
 ios: 'https://apps.apple.com/us/app/1breadcrumb/id1510271269'
 android: 'https://play.google.com/store/apps/details?id=com.onebreadcrumb.obc'
+external: 'https://web.1bc.app/'
 tech:
   - Flutter
+  - Flutter Web
   - Dart
   - BLoC
   - SSO

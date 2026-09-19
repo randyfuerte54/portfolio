@@ -382,7 +382,7 @@ const Featured = () => {
                         </a>
                       )}
                       {external && !cta && (
-                        <a href={external} aria-label="External Link" className="external">
+                        <a href={external} aria-label="Web App Link" className="external">
                           <Icon name="External" />
                         </a>
                       )}
