@@ -417,7 +417,7 @@ const Featured = () => {
 
                 <div className="project-image">
                   <a href={mainLink}>
-                    <GatsbyImage image={image} alt={title} className="img" />
+                    <GatsbyImage image={image} alt={title} className="img" loading="eager" />
                   </a>
                 </div>
               </StyledProject>
