@@ -3,7 +3,7 @@ date: '3'
 title: 'UnionDigital Bank'
 cover: './demo.png'
 ios: 'https://apps.apple.com/us/app/uniondigital-bank-ud/id1631487699'
-android: ''
+android: 'https://play.google.com/store/apps/details?id=ph.uniondigital.superapp'
 tech:
   - Flutter
   - Kotlin

@@ -2,7 +2,7 @@
 date: '2025-07-05'
 title: 'Mall of America'
 ios: 'https://apps.apple.com/us/app/mall-of-america/id1055421962'
-android: ''
+android: 'https://play.google.com/store/apps/details?id=com.moa.mallofamerica'
 icon: './icons/MallOfAmerica.jpg'
 tech:
   - Flutter

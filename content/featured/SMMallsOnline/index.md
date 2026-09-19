@@ -3,7 +3,7 @@ date: '2'
 title: 'SM Malls Online'
 cover: './demo.png'
 ios: 'https://apps.apple.com/ph/app/sm-malls-online/id1524596778'
-android: ''
+android: 'https://play.google.com/store/apps/details?id=com.smsupermalls.smmallsonline'
 tech:
   - Flutter
   - Firebase Analytics

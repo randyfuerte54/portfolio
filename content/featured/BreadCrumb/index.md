@@ -3,7 +3,7 @@ date: '1'
 title: 'BreadCrumb'
 cover: './demo.png'
 ios: 'https://apps.apple.com/us/app/breadcrumb-field-productivity/id1510271269'
-android: ''
+android: 'https://play.google.com/store/apps/details?id=com.onebreadcrumb.obc'
 tech:
   - Flutter
   - Dart

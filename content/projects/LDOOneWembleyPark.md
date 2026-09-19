@@ -2,7 +2,7 @@
 date: '2025-07-03'
 title: 'LDO One Wembley Park'
 ios: 'https://apps.apple.com/us/app/one-wembley-park/id1593211164'
-android: ''
+android: 'https://play.google.com/store/apps/details?id=com.coniq.ldo'
 icon: './icons/LDOOneWembleyPark.jpg'
 tech:
   - Flutter
