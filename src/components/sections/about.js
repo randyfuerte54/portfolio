@@ -142,40 +142,24 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! I’m Randy, a mobile software engineer based in the Philippines, working
-              Australia-aligned hours. I started my mobile career with Xamarin and C#, then
-              migrated to Flutter and Dart, and I’ve spent the 6+ years since shipping production
-              apps that people rely on every day.
+              Hi! I’m Randy. I turn ideas into Flutter widgets from the Philippines, on
+              Australia-aligned hours. My mobile story started with Xamarin and C#, then plot
+              twist: I fell for Flutter and Dart and never looked back.
             </p>
 
             <p>
-              <strong>UnionDigital Bank.</strong> I was part of the team that shipped the
-              Philippines’ first mobile digital banking app in just 7 months. I built the money
-              transfer features and led the proof of concept for in-app OTP and blockchain-based
-              identity verification, writing native Kotlin and Swift where the platform needed it.
+              Highlights so far: I helped ship the Philippines’ first mobile digital banking app in
+              7 months (UnionDigital Bank, no pressure). I led the Polaris team at SM Malls Online,
+              and our campaigns rang up ₱15M. I herded 14 Coniq apps from Ionic to Flutter and got
+              every single one to production. Now I’m building construction safety software for
+              Australian teams at BreadCrumb, where I also write the documentation, because future
+              me and my teammates deserve nice things.
             </p>
 
             <p>
-              <strong>SM Malls Online.</strong> As Development Captain and Manager of the Polaris
-              team, I led engineering for the nationwide shopping app, ran our Android and iOS
-              releases, and drove the MoEngage campaigns that generated ₱15M in revenue.
-            </p>
-
-            <p>
-              <strong>Coniq.</strong> As a consultant, I migrated 14 white-label apps from Ionic to
-              Flutter and released every one of them to production, including Mall of America,
-              WAFI Rewards, and LDO One Wembley Park, backed by new Bitrise CI/CD pipelines.
-            </p>
-
-            <p>
-              <strong>BreadCrumb.</strong> Today I build construction safety software for
-              Australian teams, from evacuation workflows to single sign-on, and I write the
-              documentation and guidelines that keep the whole team moving together.
-            </p>
-
-            <p>
-              I care about clean architecture, test coverage, and documentation. I’m also
-              currently learning React and C# on my way to becoming a full-stack developer.
+              I believe in clean architecture, tested code, and docs that actually get read. My
+              next quest: learning React and C# to become a full-stack developer. Level up
+              loading...
             </p>
 
             <p>Here are a few technologies I work with regularly:</p>
