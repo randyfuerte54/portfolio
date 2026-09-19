@@ -37,7 +37,8 @@ const Head = ({ title, description, image }) => {
     title: title || defaultTitle,
     description: description || defaultDescription,
     image: `${siteUrl}${image || defaultImage}`,
-    url: `${siteUrl}${pathname}`,
+    // pathname already includes the path prefix, so use the site origin only
+    url: `${new URL(siteUrl).origin}${pathname}`,
   };
 
   return (

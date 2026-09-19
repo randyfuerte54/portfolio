@@ -7,7 +7,7 @@ module.exports = {
     description:
       'Randy Fuerte is a Senior Flutter Developer and Mobile Software Engineer specializing in building production-grade mobile apps for FinTech, banking, retail, and enterprise clients.',
     siteUrl: 'https://randyfuerte54.github.io/portfolio', // No trailing slash allowed!
-    image: '/og.png', // Path to your image you placed in the 'static' folder
+    image: '/og-randy.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '',
   },
   plugins: [
